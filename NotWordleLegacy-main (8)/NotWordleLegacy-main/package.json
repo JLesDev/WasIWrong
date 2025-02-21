@@ -1,0 +1,8 @@
+{
+  "name": "notwordle",
+  "version": "1.0.0",
+  "description": "This is Not Wordle",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
