@@ -1,7 +1,5 @@
-# Not Wordle
+# Was I Wrong (Work in progress)
 
-The rules are simple: Make a word that contains no letters present in the unknown target word.
+The world's first AI, unsugarcoated, situation consultant
 
-Accessible at: jlesdev.github.io/NotWordleLegacy
 
-RAY HELPED WITH DESIGN
