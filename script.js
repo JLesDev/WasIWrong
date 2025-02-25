@@ -92,11 +92,12 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
+var score = 0;
+var questions = 0;
 
+function questions2(){
 
-function questions(){
-
-  var score = 0;
+  
 
   let q1 = document.createElement("h1");
       q1.setAttribute("id", "placeholder");
@@ -107,7 +108,7 @@ function questions(){
 
 }
 
-questions();
+questions2();
 
 function evaluate(){
 
@@ -278,7 +279,6 @@ function shadeKeyBoard(letter, color) {
   }
 }
 
-
 document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   const target = e.target;
 
@@ -287,8 +287,20 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   }
   let key = target.textContent;
 
-  if (key === "Del") {
-    key = "Backspace";
+  if (key === "YES") {
+    score = score + 1;
+    //question = question + 1;
+    shadeKeyBoard("YES", "lightgreen");
+    console.log("yes");
+  }
+  else if (key === "NO"){
+    score = score - 1;
+    //question = question + 1;
+    console.log("no");
+  }
+  else{
+    //question = question + 1;
+    console.log("N/A");
   }
 
   document.dispatchEvent(new KeyboardEvent("keyup", { 'key': key }));
